@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="wrapper">
+        <input type="text" [(ngModel)]="quickSearchValue" placeholder="Search" />
+    </div>
+    <ag-grid-angular style="height: 500px;" class="ag-theme-alpine" [columnDefs]="columnDefs" [rowData]="rowData"
+        [gridOptions]="gridOptions" [quickFilterText]="quickSearchValue">
+    </ag-grid-angular>
+</div>
